@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="id">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Riwayat Tontonan - Projek Movie</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body class="history-page">
+  <header class="site-header">
+    <div class="header-inner">
+      <h1 style="color:#fff;margin-left:12px;">History</h1>
+      <div class="header-actions">
+        <button id="backBtn" class="btn">back</button>
+        <button id="clearHistory" class="btn">Clear History</button>
+      </div>
+    </div>
+  </header>
+  <main>
+    <section class="container">
+      <div id="historyList" class="results"></div>
+    </section>
+  </main>
+  <script src="script.js"></script>
+  <script>
+    // back button behavior
+    document.addEventListener('DOMContentLoaded', function(){
+      const back = document.getElementById('backBtn');
+      if (back) back.addEventListener('click', () => { window.location.href = 'index.html'; });
+    });
+  </script>
+</body>
+</html>
